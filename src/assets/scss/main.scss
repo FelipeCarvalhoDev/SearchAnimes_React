@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rubik+Dirt&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik Dirt', cursive;
+}
+html {
+  background-image: url('./../images/bg.jpg');
+  background-size: cover;
+}
+body {
+  // background-color: rgb(0, 0, 0, .5);
+  min-height: 100vh;
+}
+header {
+  padding: 15px 0;
+  h1 {
+    background-color: rgb(0, 0, 0, .7);
+    text-decoration: underline;
+    text-align: center;
+    font-size: 80px;
+    color: #777777;
+    font-weight: 100;
+    border-radius: 5px;
+    padding: 15px 0;
+    span {
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+}
+.mainContent {
+  display: grid;
+  grid-template-columns: 320px auto;
+  padding-bottom: 30px;
+  aside {
+    float: left;
+    max-width: 300px;
+    margin-right: 20px;
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      color:#fff;
+      font-weight: 100;
+    }
+    hr {
+      margin: 15px 0;
+    }
+    .MuiCard-root {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(0, 0, 0, .7);
+      height: 100%;
+      a {
+        border: 1px solid #313131;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #313131;
+        height: 40px;
+        margin: 7px 0;
+        border-radius: 50px;
+        cursor: pointer;
+        background-color: #efefef;
+        font-size: 14px;
+        &:hover {
+          background-color: #aaaaaa;
+        }
+      }
+    }
+  }
+  
+  form {
+    width: 100%;
+    // padding: 10px;
+    // background-color: rgb(0, 0, 0, .8);
+    margin: 15px;
+    border-radius: 5px;
+    input {
+      margin: auto;
+      display: block;
+      width: 50%;
+      height: 50px;
+      padding: 0 15px;
+      border-radius: 50px;
+      outline: none;
+      font-size: 16px;
+    }
+  }
+  main {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-row-gap: 15px;
+    justify-content: space-between;
+    .MuiCard-root {
+      transition: 500ms;
+      &:hover {
+        transform: scale(1);
+      }
+    }
+    .MuiTypography-h5 {
+      height: 40px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0px;
+    }
+    .MuiTypography-body2 {
+      line-height: 16px;
+      max-height: 80px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+    }
+    .MuiButton-contained {
+      background-color: #ffffff;
+      color: #666666;
+      &:hover{
+        background-color: #ffffff !important;
+        color: #666666;
+        filter: brightness(0.8);
+      }
+    }
+    .Mui-disabled {
+      color: #ffffff !important;
+      border: 1px solid #ffffff !important;
+      opacity: 0.5;
+    }
+    .MuiButton-outlined {
+      background-color: #666666 !important;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      &:hover {
+        background-color: #666666 !important;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        filter: brightness(0.8);
+      }
+    }
+    .MuiCardContent-root {
+      background-color: rgb(0,0,0,0.7) !important;
+      z-index: 99999;
+      position: relative;
+      color: white;
+      margin-top: -135px;
+    }
+    .MuiCardActions-root {
+      background-color: rgb(0,0,0,0.7) !important;
+      z-index: 99999;
+      position: relative;
+    }
+  }
+}
+
+.detailsCard {
+  aside {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    a {
+      width: 80%;
+      margin: auto !important;
+      margin-top: 15px !important;
+    }
+    .MuiButton-contained {
+      background-color: #313131;
+      color: #AAAAAA;
+      &:hover{
+        background-color: #666666 !important;
+      }
+    }
+    .MuiButton-outlined {
+      border: 1px solid #313131;
+      color: #313131;
+      &:hover {
+        border: 1px solid #313131;
+        background-color: #efefef;
+      }
+    }
+    // .Mui-disabled {
+    //   color: #ffffff !important;
+    //   border: 1px solid #ffffff !important;
+    //   opacity: 0.5;
+    // }
+  }
+  main {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 40px;
+    }
+    p, li, strong {
+      font-family: Arial, Helvetica, sans-serif !important;
+      margin: revert;
+    }
+    li {
+      margin-left: 20px;
+    }
+  }
+}
