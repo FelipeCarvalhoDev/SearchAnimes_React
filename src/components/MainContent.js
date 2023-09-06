@@ -7,7 +7,7 @@ function MainContent(props) {
     <div className='mainContent'>
       <aside>
         <Card>
-          <h1>Top 10 Animes</h1>
+          <h1>Top 1 Animes</h1>
           <hr/>
           {props.topAnime.map(anime => (
             <a
